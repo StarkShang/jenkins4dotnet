@@ -1,1 +1,5 @@
-docker run -p 8080:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home -d jenkins4dotnet
+docker run \
+	-p 8080:8080 -p 50000:50000 \
+	-v jenkins_home:/var/jenkins_home \
+	--name jenkins4dotnet \
+	-d jenkins4dotnet
